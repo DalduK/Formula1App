@@ -7,18 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB3D29A027254EF100687B7E /* DriverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D299F27254EF100687B7E /* DriverView.swift */; };
 		FB51049427242333005963A9 /* F1AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51049327242333005963A9 /* F1AppApp.swift */; };
 		FB51049627242333005963A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51049527242333005963A9 /* ContentView.swift */; };
 		FB51049827242335005963A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB51049727242335005963A9 /* Assets.xcassets */; };
 		FB51049B27242335005963A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB51049A27242335005963A9 /* Preview Assets.xcassets */; };
+		FB5104A22724235F005963A9 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5104A12724235F005963A9 /* Schedule.swift */; };
+		FB5104A4272425AE005963A9 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5104A3272425AE005963A9 /* Driver.swift */; };
+		FB7D8AAA272581B800EFEED7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D8AA9272581B800EFEED7 /* WebView.swift */; };
+		FB7FFBE827244922008BA1B4 /* DriverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FFBE727244922008BA1B4 /* DriverService.swift */; };
+		FB7FFBEA272451BB008BA1B4 /* DriverListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FFBE9272451BB008BA1B4 /* DriverListView.swift */; };
+		FB89568A2727FAF1009B7280 /* ScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8956892727FAF1009B7280 /* ScheduleService.swift */; };
+		FB89568C2727FB03009B7280 /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB89568B2727FB03009B7280 /* ScheduleViewModel.swift */; };
+		FB89568E2727FC00009B7280 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB89568D2727FC00009B7280 /* ScheduleView.swift */; };
+		FB8956902728067D009B7280 /* ScheduleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB89568F2728067D009B7280 /* ScheduleListView.swift */; };
+		FB8956922728699A009B7280 /* RaceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8956912728699A009B7280 /* RaceDetailsView.swift */; };
+		FBCC01A027249B9700821F83 /* DriverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC019F27249B9700821F83 /* DriverViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB3D299F27254EF100687B7E /* DriverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverView.swift; sourceTree = "<group>"; };
 		FB51049027242333005963A9 /* F1App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = F1App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB51049327242333005963A9 /* F1AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1AppApp.swift; sourceTree = "<group>"; };
 		FB51049527242333005963A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB51049727242335005963A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB51049A27242335005963A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB5104A12724235F005963A9 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		FB5104A3272425AE005963A9 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		FB7D8AA9272581B800EFEED7 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		FB7FFBE727244922008BA1B4 /* DriverService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverService.swift; sourceTree = "<group>"; };
+		FB7FFBE9272451BB008BA1B4 /* DriverListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverListView.swift; sourceTree = "<group>"; };
+		FB8956892727FAF1009B7280 /* ScheduleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleService.swift; sourceTree = "<group>"; };
+		FB89568B2727FB03009B7280 /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
+		FB89568D2727FC00009B7280 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		FB89568F2728067D009B7280 /* ScheduleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListView.swift; sourceTree = "<group>"; };
+		FB8956912728699A009B7280 /* RaceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailsView.swift; sourceTree = "<group>"; };
+		FBCC019F27249B9700821F83 /* DriverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +75,8 @@
 		FB51049227242333005963A9 /* F1App */ = {
 			isa = PBXGroup;
 			children = (
+				FB895696272870BC009B7280 /* Views */,
+				FB8956932728708C009B7280 /* Models */,
 				FB51049327242333005963A9 /* F1AppApp.swift */,
 				FB51049527242333005963A9 /* ContentView.swift */,
 				FB51049727242335005963A9 /* Assets.xcassets */,
@@ -65,6 +91,64 @@
 				FB51049A27242335005963A9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB8956932728708C009B7280 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB895695272870A9009B7280 /* Driver */,
+				FB895694272870A1009B7280 /* Schedule */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB895694272870A1009B7280 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				FB5104A12724235F005963A9 /* Schedule.swift */,
+				FB8956892727FAF1009B7280 /* ScheduleService.swift */,
+				FB89568B2727FB03009B7280 /* ScheduleViewModel.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		FB895695272870A9009B7280 /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				FB5104A3272425AE005963A9 /* Driver.swift */,
+				FB7FFBE727244922008BA1B4 /* DriverService.swift */,
+				FBCC019F27249B9700821F83 /* DriverViewModel.swift */,
+			);
+			path = Driver;
+			sourceTree = "<group>";
+		};
+		FB895696272870BC009B7280 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB895698272870DE009B7280 /* ScheduleViews */,
+				FB895697272870CE009B7280 /* DriverViews */,
+				FB8956912728699A009B7280 /* RaceDetailsView.swift */,
+				FB7D8AA9272581B800EFEED7 /* WebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FB895697272870CE009B7280 /* DriverViews */ = {
+			isa = PBXGroup;
+			children = (
+				FB7FFBE9272451BB008BA1B4 /* DriverListView.swift */,
+				FB3D299F27254EF100687B7E /* DriverView.swift */,
+			);
+			path = DriverViews;
+			sourceTree = "<group>";
+		};
+		FB895698272870DE009B7280 /* ScheduleViews */ = {
+			isa = PBXGroup;
+			children = (
+				FB89568D2727FC00009B7280 /* ScheduleView.swift */,
+				FB89568F2728067D009B7280 /* ScheduleListView.swift */,
+			);
+			path = ScheduleViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +221,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7FFBE827244922008BA1B4 /* DriverService.swift in Sources */,
+				FB5104A22724235F005963A9 /* Schedule.swift in Sources */,
+				FB3D29A027254EF100687B7E /* DriverView.swift in Sources */,
+				FBCC01A027249B9700821F83 /* DriverViewModel.swift in Sources */,
 				FB51049627242333005963A9 /* ContentView.swift in Sources */,
+				FB89568E2727FC00009B7280 /* ScheduleView.swift in Sources */,
+				FB8956922728699A009B7280 /* RaceDetailsView.swift in Sources */,
 				FB51049427242333005963A9 /* F1AppApp.swift in Sources */,
+				FB89568C2727FB03009B7280 /* ScheduleViewModel.swift in Sources */,
+				FB89568A2727FAF1009B7280 /* ScheduleService.swift in Sources */,
+				FB8956902728067D009B7280 /* ScheduleListView.swift in Sources */,
+				FB7D8AAA272581B800EFEED7 /* WebView.swift in Sources */,
+				FB7FFBEA272451BB008BA1B4 /* DriverListView.swift in Sources */,
+				FB5104A4272425AE005963A9 /* Driver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

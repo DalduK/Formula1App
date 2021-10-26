@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct F1AppApp: App {
+    @ObservedObject var viewModel = DriverViewModel(driverService: DriverService())
+    @ObservedObject var viewScheduleModel = ScheduleViewModel(scheduleService: ScheduleService())
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: viewModel,scheduleModel: viewScheduleModel)
         }
     }
 }
