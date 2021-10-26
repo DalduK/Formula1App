@@ -29,23 +29,18 @@ struct DriverListView: View {
                     Menu ("\(date)"){
                         ForEach((1950...2021).reversed(), id: \.self) { i in
                             Button(action: {
+                                print("done")
                                    self.date = i
+                                DispatchQueue.main.async{
+                                    loading = false
+                                    print(loading)
+                                    self.viewDriverModel.driverService.updateDate(date: date)
+                                    self.viewDriverModel.refresh()
+                                    print(loading)
+                                }
                                 }) {
                                    Text(String(i))
                                 }
-                        }
-                        .onChange (of: date) { value in
-                            guard (value != 0) else {return}
-                            print(value)
-                            print("Wykonano")
-                            DispatchQueue.main.async{
-                                loading = false
-                                print(loading)
-                                self.viewDriverModel.driverService.updateDate(date: date)
-                                self.viewDriverModel.refresh()
-                                print(loading)
-                            }
-                            
                         }
                         
                     }.padding(.trailing, 20).padding(.top,20)
