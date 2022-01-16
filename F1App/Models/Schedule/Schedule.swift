@@ -40,6 +40,6 @@ public struct Schedule: Hashable {
         self.locality = response.Circuit.Location.locality
         self.country = response.Circuit.Location.country
         self.date = response.date
-        self.time = response.time
+        self.time = response.time ?? ""
     }
 }

@@ -72,7 +72,7 @@ public struct APISchedule: Decodable{
     let raceName: String
     let Circuit: Circut
     let date: String
-    let time: String
+    let time: String?
 }
 
 public struct Circut: Decodable{

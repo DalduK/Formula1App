@@ -25,30 +25,17 @@ struct DriverListView: View {
                     }
                     
                     Spacer()
-                    
-                    Menu ("\(date)"){
-                        ForEach((1950...2021).reversed(), id: \.self) { i in
-                            Button(action: {
-                                   self.date = i
-                                }) {
-                                   Text(String(i))
-                                }
+                    Picker("Select a paint color", selection: $date) {
+                        ForEach((1950...2022).reversed(), id: \.self) {
+                            Text(verbatim: "\($0)")
                         }
-                        .onChange (of: date) { value in
-                            guard (value != 0) else {return}
-                            print(value)
-                            print("Wykonano")
-                            DispatchQueue.main.async{
-                                loading = false
-                                print(loading)
-                                self.viewDriverModel.driverService.updateDate(date: date)
-                                self.viewDriverModel.refresh()
-                                print(loading)
-                            }
-                            
-                        }
-                        
-                    }.padding(.trailing, 20).padding(.top,20)
+                    }
+                    .onChange(of: date) { _ in
+                        self.viewDriverModel.driverService.updateDate(date: date)
+                        self.viewDriverModel.refresh()
+                    }
+                    .pickerStyle(.menu)
+                    .padding(.trailing, 20).padding(.top,20)
                 }
                 List(viewDriverModel.driverList,id: \.self){driver in
                     DriverView(driverModel: driver)
