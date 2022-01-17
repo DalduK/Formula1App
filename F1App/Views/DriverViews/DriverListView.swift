@@ -16,31 +16,23 @@ struct DriverListView: View {
     var body: some View {
         NavigationView{
             VStack{
-                HStack{
-                    Text("Driver List").font(.largeTitle)
-                        .fontWeight(.bold).padding(.leading,20)
-                        .padding(.top,20)
-                    if !loading {
-                        ProgressView().padding(.leading,20).padding(.top,20)
-                    }
-                    
-                    Spacer()
-                    Picker("Select a paint color", selection: $date) {
-                        ForEach((1950...2022).reversed(), id: \.self) {
-                            Text(verbatim: "\($0)")
-                        }
-                    }
-                    .onChange(of: date) { _ in
-                        self.viewDriverModel.driverService.updateDate(date: date)
-                        self.viewDriverModel.refresh()
-                    }
-                    .pickerStyle(.menu)
-                    .padding(.trailing, 20).padding(.top,20)
-                }
                 List(viewDriverModel.driverList,id: \.self){driver in
                     DriverView(driverModel: driver)
-                }.navigationBarTitle("")
-                    .navigationBarHidden(true)
+                }.navigationBarTitle("Driver List")
+                    .toolbar(content: {
+                        ToolbarItem(placement: .navigationBarTrailing, content: {
+                            Picker("", selection: $date) {
+                                ForEach((1950...2022).reversed(), id: \.self) {
+                                    Text(verbatim: "\($0)")
+                                }
+                            }
+                            .onChange(of: date) { _ in
+                                self.viewDriverModel.driverService.updateDate(date: date)
+                                self.viewDriverModel.refresh()
+                            }
+                            .pickerStyle(.menu)
+                        })
+                    })
             }.onChange(of: viewDriverModel.driverList){ value in
                 guard (value != []) else {return}
                 loading = true

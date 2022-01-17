@@ -20,7 +20,7 @@ import SwiftUI
 
 public final class ScheduleService{
     var completionHandler: ((ScheduleList) -> Void)?
-    var date = 2021
+    var date = 2022
     public func loadScheduleData(_ completionHandler: @escaping((ScheduleList) -> Void)){
         getHomeData()
         self.completionHandler = completionHandler
