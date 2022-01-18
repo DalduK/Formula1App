@@ -11,7 +11,6 @@ public struct ScheduleList{
     var schedule: [Schedule] = []
     init(response: RaceTable){
             for race in response.Races{
-                print(race.raceName)
             self.schedule.append(Schedule(response: race))
         }
     }

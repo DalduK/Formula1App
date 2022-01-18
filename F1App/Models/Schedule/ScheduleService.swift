@@ -40,7 +40,6 @@ public final class ScheduleService{
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard error == nil, let data = data else {return}
             if let response = try? JSONDecoder().decode(APIResponseSchedule.self, from: data){
-                print("decoded")
                 self.completionHandler?(ScheduleList(response: response.MRData.RaceTable))
             }
         }.resume()

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0147FDD2279696E60094C529 /* Quali.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0147FDD1279696E60094C529 /* Quali.swift */; };
+		0147FDD4279696F10094C529 /* QualiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0147FDD3279696F10094C529 /* QualiService.swift */; };
+		0147FDD6279697030094C529 /* QualiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0147FDD5279697030094C529 /* QualiViewModel.swift */; };
+		0147FDD92796BBD00094C529 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0147FDD82796BBD00094C529 /* Race.swift */; };
+		0147FDDB2796BBDA0094C529 /* RaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0147FDDA2796BBDA0094C529 /* RaceService.swift */; };
+		0147FDDD2796BC630094C529 /* RaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0147FDDC2796BC630094C529 /* RaceViewModel.swift */; };
+		0147FDE027974F4D0094C529 /* RaceDriverResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0147FDDF27974F4D0094C529 /* RaceDriverResult.swift */; };
+		0147FDE227974F660094C529 /* RaceDriverResultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0147FDE127974F660094C529 /* RaceDriverResultService.swift */; };
+		0147FDE427974F720094C529 /* RaceDriverResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0147FDE327974F720094C529 /* RaceDriverResultViewModel.swift */; };
 		01644A0227957542004C30F2 /* StandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01644A0127957542004C30F2 /* StandingsView.swift */; };
 		01644A0427957556004C30F2 /* StandingsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01644A0327957556004C30F2 /* StandingsListView.swift */; };
 		01644A092795779D004C30F2 /* QualiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01644A082795779D004C30F2 /* QualiView.swift */; };
@@ -32,6 +41,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0147FDD1279696E60094C529 /* Quali.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quali.swift; sourceTree = "<group>"; };
+		0147FDD3279696F10094C529 /* QualiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualiService.swift; sourceTree = "<group>"; };
+		0147FDD5279697030094C529 /* QualiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualiViewModel.swift; sourceTree = "<group>"; };
+		0147FDD82796BBD00094C529 /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
+		0147FDDA2796BBDA0094C529 /* RaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceService.swift; sourceTree = "<group>"; };
+		0147FDDC2796BC630094C529 /* RaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceViewModel.swift; sourceTree = "<group>"; };
+		0147FDDF27974F4D0094C529 /* RaceDriverResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDriverResult.swift; sourceTree = "<group>"; };
+		0147FDE127974F660094C529 /* RaceDriverResultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDriverResultService.swift; sourceTree = "<group>"; };
+		0147FDE327974F720094C529 /* RaceDriverResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDriverResultViewModel.swift; sourceTree = "<group>"; };
 		01644A0127957542004C30F2 /* StandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsView.swift; sourceTree = "<group>"; };
 		01644A0327957556004C30F2 /* StandingsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsListView.swift; sourceTree = "<group>"; };
 		01644A082795779D004C30F2 /* QualiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualiView.swift; sourceTree = "<group>"; };
@@ -68,6 +86,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0147FDD02796961E0094C529 /* Quali */ = {
+			isa = PBXGroup;
+			children = (
+				0147FDD1279696E60094C529 /* Quali.swift */,
+				0147FDD3279696F10094C529 /* QualiService.swift */,
+				0147FDD5279697030094C529 /* QualiViewModel.swift */,
+			);
+			path = Quali;
+			sourceTree = "<group>";
+		};
+		0147FDD72796BBB10094C529 /* Race */ = {
+			isa = PBXGroup;
+			children = (
+				0147FDD82796BBD00094C529 /* Race.swift */,
+				0147FDDA2796BBDA0094C529 /* RaceService.swift */,
+				0147FDDC2796BC630094C529 /* RaceViewModel.swift */,
+			);
+			path = Race;
+			sourceTree = "<group>";
+		};
+		0147FDDE27974F260094C529 /* RaceDriverResult */ = {
+			isa = PBXGroup;
+			children = (
+				0147FDDF27974F4D0094C529 /* RaceDriverResult.swift */,
+				0147FDE127974F660094C529 /* RaceDriverResultService.swift */,
+				0147FDE327974F720094C529 /* RaceDriverResultViewModel.swift */,
+			);
+			path = RaceDriverResult;
+			sourceTree = "<group>";
+		};
 		01644A002795751B004C30F2 /* StandingsViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +184,9 @@
 		FB8956932728708C009B7280 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0147FDDE27974F260094C529 /* RaceDriverResult */,
+				0147FDD72796BBB10094C529 /* Race */,
+				0147FDD02796961E0094C529 /* Quali */,
 				01644A0527957761004C30F2 /* Standings */,
 				FB895695272870A9009B7280 /* Driver */,
 				FB895694272870A1009B7280 /* Schedule */,
@@ -264,21 +315,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB7FFBE827244922008BA1B4 /* DriverService.swift in Sources */,
+				0147FDE427974F720094C529 /* RaceDriverResultViewModel.swift in Sources */,
 				FB5104A22724235F005963A9 /* Schedule.swift in Sources */,
 				FB3D29A027254EF100687B7E /* DriverView.swift in Sources */,
 				FBCC01A027249B9700821F83 /* DriverViewModel.swift in Sources */,
+				0147FDD4279696F10094C529 /* QualiService.swift in Sources */,
 				01644A0427957556004C30F2 /* StandingsListView.swift in Sources */,
 				01644A0D27957E57004C30F2 /* RaceStandingResultsView.swift in Sources */,
+				0147FDE227974F660094C529 /* RaceDriverResultService.swift in Sources */,
 				FB51049627242333005963A9 /* ContentView.swift in Sources */,
+				0147FDDB2796BBDA0094C529 /* RaceService.swift in Sources */,
 				01644A0227957542004C30F2 /* StandingsView.swift in Sources */,
 				FB89568E2727FC00009B7280 /* ScheduleView.swift in Sources */,
+				0147FDD6279697030094C529 /* QualiViewModel.swift in Sources */,
 				01644A092795779D004C30F2 /* QualiView.swift in Sources */,
 				FB8956922728699A009B7280 /* RaceDetailsView.swift in Sources */,
 				FB51049427242333005963A9 /* F1AppApp.swift in Sources */,
+				0147FDDD2796BC630094C529 /* RaceViewModel.swift in Sources */,
+				0147FDE027974F4D0094C529 /* RaceDriverResult.swift in Sources */,
 				FB89568C2727FB03009B7280 /* ScheduleViewModel.swift in Sources */,
 				01644A0B27957E4B004C30F2 /* RaceDriverResultsView.swift in Sources */,
+				0147FDD92796BBD00094C529 /* Race.swift in Sources */,
 				FB89568A2727FAF1009B7280 /* ScheduleService.swift in Sources */,
 				01644A0F27957E6F004C30F2 /* RaceView.swift in Sources */,
+				0147FDD2279696E60094C529 /* Quali.swift in Sources */,
 				FB8956902728067D009B7280 /* ScheduleListView.swift in Sources */,
 				FB7D8AAA272581B800EFEED7 /* WebView.swift in Sources */,
 				FB7FFBEA272451BB008BA1B4 /* DriverListView.swift in Sources */,

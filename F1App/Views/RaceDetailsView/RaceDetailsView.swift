@@ -10,6 +10,7 @@ import SwiftUI
 struct RaceDetailsView: View {
     var date: String
     var round: String
+    var raceName: String
     @State var pickView = 0
     @State var standingView = 0
     var body: some View {
@@ -17,8 +18,6 @@ struct RaceDetailsView: View {
             if date.prefix(4) == "2022" {
                 Text("New Season")
             } else {
-                Text(date)
-                Text(round)
                 Picker("", selection: $pickView) {
                     Text("Qualifing").tag(0)
                     Text("Race").tag(1)
@@ -27,20 +26,31 @@ struct RaceDetailsView: View {
                 .padding(.horizontal)
                 .pickerStyle(.segmented)
                 if pickView == 0{
-                    Text("Quali")
+                    if date.prefix(4) > "1993"{
+                        QualiView(viewQualiModel: QualiViewModel(qualiService: QualiService(date: date, round: round)))
+                    } else {
+                        Spacer()
+                        Text("No info about qualifiyng before 1993")
+                        Spacer()
+                    }
                 } else if pickView == 1 {
-                    Text("Race")
+                    RaceView(viewRaceModel: RaceViewModel(raceService: RaceService(date: date, round: round)))
                 } else {
                     Picker("", selection: $standingView){
                         Text("Drivers").tag(0)
                         Text("Team").tag(1)
                     }.padding(.horizontal).pickerStyle(.segmented)
                     Spacer()
-                    Text("Standings")
+                    if standingView == 0 {
+                        RaceDriverResultsView(viewRaceDriverViewModel: RaceDriverViewModel(raceDriverService: RaceDriverService(date: date, round: round)))
+                    } else {
+                        Text("Hey")
+                    }
                 }
             }
 
         }
+        .navigationTitle(raceName).navigationBarTitleDisplayMode(.inline)
     }
 }
 
