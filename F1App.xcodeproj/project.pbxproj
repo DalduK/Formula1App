@@ -22,6 +22,7 @@
 		01644A0B27957E4B004C30F2 /* RaceDriverResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01644A0A27957E4B004C30F2 /* RaceDriverResultsView.swift */; };
 		01644A0D27957E57004C30F2 /* RaceStandingResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01644A0C27957E57004C30F2 /* RaceStandingResultsView.swift */; };
 		01644A0F27957E6F004C30F2 /* RaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01644A0E27957E6F004C30F2 /* RaceView.swift */; };
+		01B013B427989370004D2990 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B013B327989370004D2990 /* CalendarView.swift */; };
 		FB3D29A027254EF100687B7E /* DriverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D299F27254EF100687B7E /* DriverView.swift */; };
 		FB51049427242333005963A9 /* F1AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51049327242333005963A9 /* F1AppApp.swift */; };
 		FB51049627242333005963A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51049527242333005963A9 /* ContentView.swift */; };
@@ -56,6 +57,7 @@
 		01644A0A27957E4B004C30F2 /* RaceDriverResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDriverResultsView.swift; sourceTree = "<group>"; };
 		01644A0C27957E57004C30F2 /* RaceStandingResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceStandingResultsView.swift; sourceTree = "<group>"; };
 		01644A0E27957E6F004C30F2 /* RaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceView.swift; sourceTree = "<group>"; };
+		01B013B327989370004D2990 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		FB3D299F27254EF100687B7E /* DriverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverView.swift; sourceTree = "<group>"; };
 		FB51049027242333005963A9 /* F1App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = F1App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB51049327242333005963A9 /* F1AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1AppApp.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				01644A0A27957E4B004C30F2 /* RaceDriverResultsView.swift */,
 				01644A0C27957E57004C30F2 /* RaceStandingResultsView.swift */,
 				01644A0E27957E6F004C30F2 /* RaceView.swift */,
+				01B013B327989370004D2990 /* CalendarView.swift */,
 			);
 			path = RaceDetailsView;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				0147FDDD2796BC630094C529 /* RaceViewModel.swift in Sources */,
 				0147FDE027974F4D0094C529 /* RaceDriverResult.swift in Sources */,
 				FB89568C2727FB03009B7280 /* ScheduleViewModel.swift in Sources */,
+				01B013B427989370004D2990 /* CalendarView.swift in Sources */,
 				01644A0B27957E4B004C30F2 /* RaceDriverResultsView.swift in Sources */,
 				0147FDD92796BBD00094C529 /* Race.swift in Sources */,
 				FB89568A2727FAF1009B7280 /* ScheduleService.swift in Sources */,
@@ -476,6 +480,7 @@
 				DEVELOPMENT_TEAM = J2QYS83JR9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Allow access to calendar in order to save event";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -506,6 +511,7 @@
 				DEVELOPMENT_TEAM = J2QYS83JR9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Allow access to calendar in order to save event";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

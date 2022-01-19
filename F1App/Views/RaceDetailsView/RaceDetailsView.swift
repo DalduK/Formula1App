@@ -13,10 +13,14 @@ struct RaceDetailsView: View {
     var raceName: String
     @State var pickView = 0
     @State var standingView = 0
+    @State private var showIt = false
     var body: some View {
         VStack {
             if date.prefix(4) == "2022" {
-                Text("New Season")
+                Button("Events") { showIt = true }
+                            .sheet(isPresented: $showIt) {
+                                NewEventGenerator(isShowing: $showIt)
+                            }
             } else {
                 Picker("", selection: $pickView) {
                     Text("Qualifing").tag(0)
