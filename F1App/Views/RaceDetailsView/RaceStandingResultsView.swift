@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct RaceStandingResultsView: View {
-    @ObservedObject var viewRaceDriverViewModel: RaceDriverViewModel
+    @ObservedObject var standingResultViewModel: StandingResultViewModel
     var body: some View {
-        List(viewRaceDriverViewModel.driverStandingsList, id: \.position){ driver in
+        List(standingResultViewModel.standingResultList, id: \.position){ constructor in
             HStack{
-                Text("\(driver.position).\(driver.Driver.familyName)")
+                Text("\(constructor.position).\(constructor.Constructor.name)")
                 Spacer()
-                Text("\(driver.points)")
-            }.listRowBackground(driver.position == "1" ? Color(red: 1, green: 223/255, blue: 0) : driver.position == "2" ? Color(red: 192/255, green: 192/255, blue: 192/255) : driver.position == "3" ? Color(red: 176/255, green: 141/255, blue: 87/255) : Color.white)
-        }.onAppear(perform: viewRaceDriverViewModel.refresh).navigationViewStyle(.stack)
+                Text("\(constructor.points)")
+            }.listRowBackground(constructor.position == "1" ? Color(red: 1, green: 223/255, blue: 0) : constructor.position == "2" ? Color(red: 192/255, green: 192/255, blue: 192/255) : constructor.position == "3" ? Color(red: 176/255, green: 141/255, blue: 87/255) : Color.white)
+        }.onAppear(perform: standingResultViewModel.refresh).navigationViewStyle(.stack)
     }
 }
 
