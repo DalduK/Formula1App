@@ -11,7 +11,7 @@ import MapKit
 struct ScheduleView: View {
     let scheduleModel: Schedule
     var body: some View {
-        NavigationLink(destination: RaceDetailsView(date: scheduleModel.date, round: scheduleModel.round)){
+        NavigationLink(destination: RaceDetailsView(date: scheduleModel.date, time: scheduleModel.time, round: scheduleModel.round, raceName: scheduleModel.raceName)){
             HStack{
                 VStack{
                     HStack{

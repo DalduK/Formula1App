@@ -20,7 +20,7 @@ import SwiftUI
 
 public final class ScheduleService{
     var completionHandler: ((ScheduleList) -> Void)?
-    var date = 2021
+    var date = 2022
     public func loadScheduleData(_ completionHandler: @escaping((ScheduleList) -> Void)){
         getHomeData()
         self.completionHandler = completionHandler
@@ -40,7 +40,6 @@ public final class ScheduleService{
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard error == nil, let data = data else {return}
             if let response = try? JSONDecoder().decode(APIResponseSchedule.self, from: data){
-                print("decoded")
                 self.completionHandler?(ScheduleList(response: response.MRData.RaceTable))
             }
         }.resume()
@@ -72,7 +71,7 @@ public struct APISchedule: Decodable{
     let raceName: String
     let Circuit: Circut
     let date: String
-    let time: String
+    let time: String?
 }
 
 public struct Circut: Decodable{

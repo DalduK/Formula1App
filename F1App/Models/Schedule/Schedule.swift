@@ -11,7 +11,6 @@ public struct ScheduleList{
     var schedule: [Schedule] = []
     init(response: RaceTable){
             for race in response.Races{
-                print(race.raceName)
             self.schedule.append(Schedule(response: race))
         }
     }
@@ -40,6 +39,6 @@ public struct Schedule: Hashable {
         self.locality = response.Circuit.Location.locality
         self.country = response.Circuit.Location.country
         self.date = response.date
-        self.time = response.time
+        self.time = response.time ?? ""
     }
 }
