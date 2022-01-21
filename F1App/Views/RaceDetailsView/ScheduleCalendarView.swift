@@ -20,12 +20,11 @@ struct ScheduleCalendarView: View {
         self.raceName = raceName
         self.round = round
         _birthDate = State(initialValue: returnDate(dateTime: dateTime))
-        print(birthDate)
     }
     
     func returnDate(dateTime: String) -> Date {
         let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
+        dateFormatter.locale = Locale(identifier: "pl") // set locale to reliable US_POSIX
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         let date = dateFormatter.date(from:dateTime)!
         let calendar = Calendar.current
@@ -37,7 +36,7 @@ struct ScheduleCalendarView: View {
     var body: some View {
         VStack{
             ZStack{
-            DatePicker(selection: $birthDate) {
+            DatePicker(selection: $birthDate, displayedComponents: .date) {
                 Text("\(String(time.prefix(5)))")
             }
             .padding(10)
@@ -53,7 +52,7 @@ struct ScheduleCalendarView: View {
                 showIt = true
             }
             .sheet(isPresented: $showIt) {
-                NewEventGenerator(isShowing: $showIt)
+                NewEventGenerator(isShowing: $showIt, dateTime: birthDate, name: raceName)
             }
             }.padding(.horizontal,20)
             Spacer()

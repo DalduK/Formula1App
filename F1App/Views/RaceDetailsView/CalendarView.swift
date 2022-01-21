@@ -8,15 +8,20 @@ struct NewEventGenerator: UIViewControllerRepresentable {
 
     @Binding var isShowing: Bool
     var theEvent: EKEvent
+    var dateTime: Date
 
-    init(isShowing: Binding<Bool>) {
+    init(isShowing: Binding<Bool>, dateTime: Date, name: String) {
         eventStore.requestAccess(to: .event) { allow, error in
             print("Result: \(allow) or [\(error.debugDescription)]")
         }
 
         theEvent = EKEvent.init(eventStore: eventStore)
+        theEvent.title = name
+        theEvent.startDate = dateTime
+        theEvent.endDate = dateTime.addingTimeInterval(2 * 60 * 60)
 
         _isShowing = isShowing
+        self.dateTime = dateTime
     }
 
 
