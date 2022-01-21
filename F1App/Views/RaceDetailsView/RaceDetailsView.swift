@@ -9,18 +9,15 @@ import SwiftUI
 
 struct RaceDetailsView: View {
     var date: String
+    var time: String
     var round: String
     var raceName: String
     @State var pickView = 0
     @State var standingView = 0
-    @State private var showIt = false
     var body: some View {
         VStack {
             if date.prefix(4) == "2022" {
-                Button("Events") { showIt = true }
-                            .sheet(isPresented: $showIt) {
-                                NewEventGenerator(isShowing: $showIt)
-                            }
+                ScheduleCalendarView(dateTime: "\(date)T\(time)", raceName: raceName, time: time, round: round)
             } else {
                 Picker("", selection: $pickView) {
                     if date.prefix(4) > "1993"{

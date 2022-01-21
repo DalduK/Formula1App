@@ -26,6 +26,7 @@
 		019784592799F85800207F07 /* StandingResultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019784582799F85800207F07 /* StandingResultService.swift */; };
 		0197845B2799F86B00207F07 /* StandingResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0197845A2799F86B00207F07 /* StandingResultViewModel.swift */; };
 		01B013B427989370004D2990 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B013B327989370004D2990 /* CalendarView.swift */; };
+		01BA1D18279A9AC8008E6EB4 /* ScheduleCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BA1D17279A9AC8008E6EB4 /* ScheduleCalendarView.swift */; };
 		FB3D29A027254EF100687B7E /* DriverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D299F27254EF100687B7E /* DriverView.swift */; };
 		FB51049427242333005963A9 /* F1AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51049327242333005963A9 /* F1AppApp.swift */; };
 		FB51049627242333005963A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51049527242333005963A9 /* ContentView.swift */; };
@@ -64,6 +65,7 @@
 		019784582799F85800207F07 /* StandingResultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingResultService.swift; sourceTree = "<group>"; };
 		0197845A2799F86B00207F07 /* StandingResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingResultViewModel.swift; sourceTree = "<group>"; };
 		01B013B327989370004D2990 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		01BA1D17279A9AC8008E6EB4 /* ScheduleCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCalendarView.swift; sourceTree = "<group>"; };
 		FB3D299F27254EF100687B7E /* DriverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverView.swift; sourceTree = "<group>"; };
 		FB51049027242333005963A9 /* F1App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = F1App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB51049327242333005963A9 /* F1AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1AppApp.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				01644A0C27957E57004C30F2 /* RaceStandingResultsView.swift */,
 				01644A0E27957E6F004C30F2 /* RaceView.swift */,
 				01B013B327989370004D2990 /* CalendarView.swift */,
+				01BA1D17279A9AC8008E6EB4 /* ScheduleCalendarView.swift */,
 			);
 			path = RaceDetailsView;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				01644A0427957556004C30F2 /* StandingsListView.swift in Sources */,
 				01644A0D27957E57004C30F2 /* RaceStandingResultsView.swift in Sources */,
 				0147FDE227974F660094C529 /* RaceDriverResultService.swift in Sources */,
+				01BA1D18279A9AC8008E6EB4 /* ScheduleCalendarView.swift in Sources */,
 				FB51049627242333005963A9 /* ContentView.swift in Sources */,
 				0147FDDB2796BBDA0094C529 /* RaceService.swift in Sources */,
 				01644A0227957542004C30F2 /* StandingsView.swift in Sources */,
