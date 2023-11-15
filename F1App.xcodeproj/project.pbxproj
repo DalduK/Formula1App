@@ -96,36 +96,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0147FDD02796961E0094C529 /* Quali */ = {
-			isa = PBXGroup;
-			children = (
-				0147FDD1279696E60094C529 /* Quali.swift */,
-				0147FDD3279696F10094C529 /* QualiService.swift */,
-				0147FDD5279697030094C529 /* QualiViewModel.swift */,
-			);
-			path = Quali;
-			sourceTree = "<group>";
-		};
-		0147FDD72796BBB10094C529 /* Race */ = {
-			isa = PBXGroup;
-			children = (
-				0147FDD82796BBD00094C529 /* Race.swift */,
-				0147FDDA2796BBDA0094C529 /* RaceService.swift */,
-				0147FDDC2796BC630094C529 /* RaceViewModel.swift */,
-			);
-			path = Race;
-			sourceTree = "<group>";
-		};
-		0147FDDE27974F260094C529 /* RaceDriverResult */ = {
-			isa = PBXGroup;
-			children = (
-				0147FDDF27974F4D0094C529 /* RaceDriverResult.swift */,
-				0147FDE127974F660094C529 /* RaceDriverResultService.swift */,
-				0147FDE327974F720094C529 /* RaceDriverResultViewModel.swift */,
-			);
-			path = RaceDriverResult;
-			sourceTree = "<group>";
-		};
 		01644A002795751B004C30F2 /* StandingsViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,13 +103,6 @@
 				01644A0327957556004C30F2 /* StandingsListView.swift */,
 			);
 			path = StandingsViews;
-			sourceTree = "<group>";
-		};
-		01644A0527957761004C30F2 /* Standings */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Standings;
 			sourceTree = "<group>";
 		};
 		01644A0627957779004C30F2 /* RaceDetailsView */ = {
@@ -154,16 +117,6 @@
 				01BA1D17279A9AC8008E6EB4 /* ScheduleCalendarView.swift */,
 			);
 			path = RaceDetailsView;
-			sourceTree = "<group>";
-		};
-		019784552799EFFB00207F07 /* StandingResults */ = {
-			isa = PBXGroup;
-			children = (
-				019784562799F84A00207F07 /* StandingResult.swift */,
-				019784582799F85800207F07 /* StandingResultService.swift */,
-				0197845A2799F86B00207F07 /* StandingResultViewModel.swift */,
-			);
-			path = StandingResults;
 			sourceTree = "<group>";
 		};
 		FB51048727242333005963A9 = {
@@ -185,6 +138,8 @@
 		FB51049227242333005963A9 /* F1App */ = {
 			isa = PBXGroup;
 			children = (
+				FBDD1D9C2B04D61900B4E6EE /* Utils */,
+				FBDD1D9B2B04D5A900B4E6EE /* ViewModels */,
 				FB895696272870BC009B7280 /* Views */,
 				FB8956932728708C009B7280 /* Models */,
 				FB51049327242333005963A9 /* F1AppApp.swift */,
@@ -206,35 +161,14 @@
 		FB8956932728708C009B7280 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				019784552799EFFB00207F07 /* StandingResults */,
-				0147FDDE27974F260094C529 /* RaceDriverResult */,
-				0147FDD72796BBB10094C529 /* Race */,
-				0147FDD02796961E0094C529 /* Quali */,
-				01644A0527957761004C30F2 /* Standings */,
-				FB895695272870A9009B7280 /* Driver */,
-				FB895694272870A1009B7280 /* Schedule */,
+				019784562799F84A00207F07 /* StandingResult.swift */,
+				0147FDDF27974F4D0094C529 /* RaceDriverResult.swift */,
+				0147FDD82796BBD00094C529 /* Race.swift */,
+				0147FDD1279696E60094C529 /* Quali.swift */,
+				FB5104A3272425AE005963A9 /* Driver.swift */,
+				FB5104A12724235F005963A9 /* Schedule.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		FB895694272870A1009B7280 /* Schedule */ = {
-			isa = PBXGroup;
-			children = (
-				FB5104A12724235F005963A9 /* Schedule.swift */,
-				FB8956892727FAF1009B7280 /* ScheduleService.swift */,
-				FB89568B2727FB03009B7280 /* ScheduleViewModel.swift */,
-			);
-			path = Schedule;
-			sourceTree = "<group>";
-		};
-		FB895695272870A9009B7280 /* Driver */ = {
-			isa = PBXGroup;
-			children = (
-				FB5104A3272425AE005963A9 /* Driver.swift */,
-				FB7FFBE727244922008BA1B4 /* DriverService.swift */,
-				FBCC019F27249B9700821F83 /* DriverViewModel.swift */,
-			);
-			path = Driver;
 			sourceTree = "<group>";
 		};
 		FB895696272870BC009B7280 /* Views */ = {
@@ -265,6 +199,32 @@
 				FB89568F2728067D009B7280 /* ScheduleListView.swift */,
 			);
 			path = ScheduleViews;
+			sourceTree = "<group>";
+		};
+		FBDD1D9B2B04D5A900B4E6EE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0197845A2799F86B00207F07 /* StandingResultViewModel.swift */,
+				0147FDE327974F720094C529 /* RaceDriverResultViewModel.swift */,
+				0147FDDC2796BC630094C529 /* RaceViewModel.swift */,
+				0147FDD5279697030094C529 /* QualiViewModel.swift */,
+				FBCC019F27249B9700821F83 /* DriverViewModel.swift */,
+				FB89568B2727FB03009B7280 /* ScheduleViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FBDD1D9C2B04D61900B4E6EE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				019784582799F85800207F07 /* StandingResultService.swift */,
+				0147FDE127974F660094C529 /* RaceDriverResultService.swift */,
+				0147FDDA2796BBDA0094C529 /* RaceService.swift */,
+				0147FDD3279696F10094C529 /* QualiService.swift */,
+				FB7FFBE727244922008BA1B4 /* DriverService.swift */,
+				FB8956892727FAF1009B7280 /* ScheduleService.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -510,7 +470,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -541,7 +501,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

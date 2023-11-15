@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ScheduleListView: View {
     @ObservedObject var viewScheduleModel: ScheduleViewModel
-    @State var date = 2022
+    @State var date = 2023
     var body: some View {
         NavigationView{
             List(viewScheduleModel.scheduleList,id: \.self){races in
@@ -18,7 +18,7 @@ struct ScheduleListView: View {
                 .toolbar{
                     ToolbarItem(placement: .navigationBarTrailing){
                         Picker("", selection: $date) {
-                            ForEach((1950...2022).reversed(), id: \.self) {
+                            ForEach((1950...2023).reversed(), id: \.self) {
                                 Text(verbatim: "\($0)")
                             }
                         }

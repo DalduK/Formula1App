@@ -11,7 +11,7 @@ import SwiftUI
 
 struct DriverListView: View {
     @ObservedObject var viewDriverModel: DriverViewModel
-    @State var date = 2021
+    @State var date = 2023
     @State var loading = false
     var body: some View {
         NavigationView{
@@ -22,7 +22,7 @@ struct DriverListView: View {
                     .toolbar(content: {
                         ToolbarItem(placement: .navigationBarTrailing, content: {
                             Picker("", selection: $date) {
-                                ForEach((1950...2022).reversed(), id: \.self) {
+                                ForEach((1950...2023).reversed(), id: \.self) {
                                     Text(verbatim: "\($0)")
                                 }
                             }

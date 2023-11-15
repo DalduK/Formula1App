@@ -1,18 +1,17 @@
 //
-//  QualiService.swift
+//  StandingResultService.swift
 //  F1App
 //
-//  Created by Przemysław Woźny on 18/01/2022.
+//  Created by Przemysław Woźny on 20/01/2022.
 //
 
 import Foundation
 
-
-public final class QualiService{
-    var completionHandler: (([RaceQualiData]) -> Void)?
-    var date = "2021"
+public final class StandingResultService {
+    var completionHandler: (([ConstructorStandings]) -> Void)?
+    var date = "2023"
     var round = "1"
-    public func loadDriverData(_ completionHandler: @escaping(([RaceQualiData]) -> Void)){
+    public func loadDriverData(_ completionHandler: @escaping(([ConstructorStandings]) -> Void)){
         getHomeData()
         self.completionHandler = completionHandler
     }
@@ -32,13 +31,13 @@ public final class QualiService{
     }
     
     func getHomeData() {
-        let urlString = "https://ergast.com/api/f1/\(date.prefix(4))/\(round)/qualifying.json"
+        let urlString = "https://ergast.com/api/f1/\(date.prefix(4))/\(round)/constructorStandings.json"
         guard let url = URL(string: urlString) else {return}
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard error == nil, let data = data else {return}
-            if let response = try? JSONDecoder().decode(APIResponseQuali.self, from: data){
-                self.completionHandler?(response.MRData.RaceTable.Races)
+            if let response = try? JSONDecoder().decode(APIResponseStandingResult.self, from: data){
+                self.completionHandler?(response.MRData.StandingsTable.StandingsLists[0].ConstructorStandings)
             }
         }.resume()
     }

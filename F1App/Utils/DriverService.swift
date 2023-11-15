@@ -11,7 +11,7 @@ import SwiftUI
 
 public final class DriverService{
     var completionHandler: ((DriverList) -> Void)?
-    var date = 2021
+    var date = 2023
     public func loadDriverData(_ completionHandler: @escaping((DriverList) -> Void)){
         getHomeData()
         self.completionHandler = completionHandler
@@ -38,33 +38,4 @@ public final class DriverService{
     }
 }
 
-public struct APIResponse: Decodable{
-    let MRData: GenericData
-}
-
-public struct GenericData: Decodable{
-    let xmlns: String
-    let series: String
-    let url: String
-    let limit: String
-    let offset: String
-    let total: String
-    let DriverTable: DriverTable
-}
-
-public struct DriverTable: Decodable{
-    let season: String
-    let Drivers: [APIDriver]
-}
-
-public struct APIDriver: Decodable{
-    let driverId: String
-    let permanentNumber: String?
-    let code: String?
-    let url: String?
-    let givenName: String
-    let familyName: String
-    let dateOfBirth: String
-    let nationality: String
-}
 

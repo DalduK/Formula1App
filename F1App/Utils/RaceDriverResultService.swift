@@ -9,7 +9,7 @@ import Foundation
 
 public final class RaceDriverService{
     var completionHandler: (([DriverStandings]) -> Void)?
-    var date = "2021"
+    var date = "2023"
     var round = "1"
     public func loadDriverData(_ completionHandler: @escaping(([DriverStandings]) -> Void)){
         getHomeData()

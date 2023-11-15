@@ -16,7 +16,7 @@ struct RaceDetailsView: View {
     @State var standingView = 0
     var body: some View {
         VStack {
-            if date.prefix(4) == "2022" {
+            if let raceDate = date.toDate(), raceDate > Date.now {
                 ScheduleCalendarView(dateTime: "\(date)T\(time)", raceName: raceName, time: time, round: round)
             } else {
                 Picker("", selection: $pickView) {
@@ -76,4 +76,11 @@ struct RaceDetailsView: View {
     }
 }
 
+extension String {
+    func toDate() -> Date? {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter.date(from: self)
+    }
+}
 
